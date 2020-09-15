@@ -1,9 +1,14 @@
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-    # The "feature" block is required for AzureRM provider 2.x. 
+    #The "feature" block is required for AzureRM provider 2.x. 
     # If you're using version 1.x, the "features" block is not allowed.
     version = "~>2.0"
-    features {}
+    subscription_id = "82fb23d9-1348-46f9-8c9d-e698c0665a22"
+    client_id = "095023d1-33d9-455e-8e65-177677010eef"
+    client_secret = "~Sz4p1bV.MXy_n0K60auZUDII-XpovQ5-2"
+    tenant_id = "5c25a1d6-d037-4067-9c06-6e9b44e952e9"
+
+    features{}
 }
 
 # Create a resource group if it doesn't exist
